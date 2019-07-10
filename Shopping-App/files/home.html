@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Shopping App</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+
+    </head>
+    <body onload="getProducts()">
+        <!-- Simple header with fixed tabs. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">Shopping App</span>
+                </div>
+                <!-- Tabs -->
+                <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                    <a href="#products" class="mdl-layout__tab is-active">Products</a>
+                    <a href="#my-cart" class="mdl-layout__tab" id="my-cart-tab">My Cart</a>
+                    <a href="#checkout" class="mdl-layout__tab" id="checkout-tab">Checkout</a>
+                </div>
+            </header>
+
+            <main class="mdl-layout__content">
+                <section class="mdl-layout__tab-panel is-active" id="products">
+                    <div class="page-content">
+                        <!-- The Product List goe0000s here  -->
+                        <div id="product-list" class="mdl-grid">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mdl-layout__tab-panel" id="my-cart">
+                    <div class="page-content">
+                        <!-- My Cart goes here -->
+                        <div id="my-cart-list" class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--2-col"></div>
+                            <div class="mdl-cell mdl-cell--8-col">
+                                <span class="fa fa-shopping-cart fa-3x" style="margin: 20px 20px 20px 20px;"></span><br/>
+                                Your Shopping Cart is empty. <br/>
+                                Your Shopping Cart lives to serve. Give it purpose - fill it with books, CDs, videos, DVDs, electronics, and more.
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mdl-layout__tab-panel" id="checkout">
+                    <div class="page-content">
+                        <!-- My checkout goes here -->
+                        <div id="checkout-bill" class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--2-col"></div>
+                            <div class="mdl-cell mdl-cell--8-col">
+                                <span class="fa fa-paper-plane-o fa-3x" style="margin: 20px 20px 20px 20px;"></span><br/>
+                                Can't proceed to checkout. Your cart is empty. <br/>
+                                Please add products to your cart to proceed for checkout.
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col"></div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </body>
+</html>
